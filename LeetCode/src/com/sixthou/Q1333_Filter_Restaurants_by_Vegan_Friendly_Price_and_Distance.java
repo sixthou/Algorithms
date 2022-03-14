@@ -21,6 +21,7 @@ public class Q1333_Filter_Restaurants_by_Vegan_Friendly_Price_and_Distance {
 
 
     public static class Solution {
+
         public List<Integer> filterRestaurants(int[][] restaurants, int veganFriendly, int maxPrice, int maxDistance) {
             RestaurantList restaurantList = new RestaurantList();
 
@@ -33,6 +34,7 @@ public class Q1333_Filter_Restaurants_by_Vegan_Friendly_Price_and_Distance {
 
 
         public static class Restaurant implements Comparable<Restaurant> {
+
             private int id;
             private int rating;
             private int veganFriendly;
@@ -48,9 +50,9 @@ public class Q1333_Filter_Restaurants_by_Vegan_Friendly_Price_and_Distance {
             }
 
             private boolean veganFilter(int filterButton) {
-                if(filterButton == 0){
+                if (filterButton == 0) {
                     return true;
-                }else{
+                } else {
                     return this.veganFriendly == 1;
                 }
             }
@@ -66,21 +68,21 @@ public class Q1333_Filter_Restaurants_by_Vegan_Friendly_Price_and_Distance {
 
             @Override
             public int compareTo(final Restaurant o) {
-                if(o.rating < rating){
+                if (o.rating < rating) {
                     return -1;
-                }else if(o.rating == rating){
+                } else if (o.rating == rating) {
                     return o.id - id;
-                }else{
+                } else {
                     return 1;
                 }
             }
         }
 
-        public static class RestaurantList{
+        public static class RestaurantList {
 
             ArrayList<Restaurant> restaurants = new ArrayList<>();
 
-            private void add(Restaurant restaurant){
+            private void add(Restaurant restaurant) {
                 restaurants.add(restaurant);
             }
 
@@ -103,6 +105,4 @@ public class Q1333_Filter_Restaurants_by_Vegan_Friendly_Price_and_Distance {
             }
         }
     }
-
-
 }
