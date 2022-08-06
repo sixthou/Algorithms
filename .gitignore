@@ -148,3 +148,5 @@ Temporary Items
 # End of https://www.toptal.com/developers/gitignore/api/macos,intellij+all,java
 
 test/
+test
+src/main/java/test
