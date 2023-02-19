@@ -12,7 +12,7 @@ public class Q_43105 {
      * 제공자 : 프로그래머스
      * 제목 : 정수 삼각형
      * URL : https://school.programmers.co.kr/learn/courses/30/lessons/43105
-     * 난이도 : 2
+     * 난이도 : 3
      * 유형 : DP
      * 설명 : DP 가장 기본 문제.. bottom up으로 해결.
      * 예외 :
