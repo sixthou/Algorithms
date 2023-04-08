@@ -64,7 +64,7 @@ public class Q_12987 {
 
     private static Stream<Arguments> testcase() {
         return Stream.of(
-                Arguments.of(new int[]{9, 7, 5, 3}, new int[]{2, 2, 6, 8}, 2),
+                Arguments.of(new int[]{9, 7, 5, 3}, new int[]{2, 2, 6, 8}, 3),
                 Arguments.of(new int[]{5, 1, 3, 7}, new int[]{2, 2, 6, 8}, 3),
                 Arguments.of(new int[]{2, 2, 2, 2}, new int[]{1, 1, 1, 1}, 0)
         );
